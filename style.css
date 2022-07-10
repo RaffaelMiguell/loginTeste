@@ -1,0 +1,229 @@
+:root {
+  --orange: hsl(13, 86%, 55%);
+  --white: hsl(0, 14%, 97%);
+  --gray: hsl(280, 3%, 21%);
+  --font-color-light: hsl(0, 0%, 100%);
+  --font-color-dark: rgb(108, 108, 108);
+  --placeholder: hsl(0, 0%, 91%);
+  --fontmonteserrat: 'Montserrat Alternates', sans-serif;
+  --fontcomfortaa: 'Comfortaa', cursive;
+  font-size: 62.5%; /* 1rem = 10px */
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+a:link {
+  text-decoration: none;
+  cursor: pointer;
+}
+
+a:visited {
+  text-decoration: none;
+}
+
+img {
+  width: 100%;
+}
+
+body {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  /* background-color: var(--white); */
+  background: rgb(54, 52, 55);
+  background: linear-gradient(180deg, var(--gray) 10%, var(--orange) 100%);
+}
+
+/* header {
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  padding: 2rem;
+} */
+
+/* header h1 {
+  font-weight: bold;
+  font-size: 3.5rem;
+  text-transform: uppercase;
+  font-family: var(--fontcomfortaa);
+  color: var(--orange);
+} */
+
+.wrapper {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-inline: auto;
+  padding-inline: 2.4rem;
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  align-content: stretch;
+  justify-content: center;
+  border-radius: 3px;
+  width: 25%;
+  min-width: 350px;
+  /* height: 80%; */
+  background-color: var(--gray);
+  opacity: 0.9;
+}
+
+.img-sign {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  background-color: var(--orange);
+  border-radius: 3px 3px 0px 0;
+}
+
+.img-sign path[fill*='#EFC849'] {
+  fill: var(--gray);
+}
+
+.img-sign path[fill*='#FFFFFF'] {
+  fill: var(--orange);
+}
+
+.titulo-login {
+  display: flex;
+  justify-content: start;
+  width: 100%;
+  margin-block: 1rem;
+  padding: 0.7rem;
+  /* background-color: rebeccapurple; */
+}
+
+.titulo-login h3 {
+  color: var(--white);
+  width: 100%;
+  font-size: 1.5rem;
+  font-family: var(--fontcomfortaa);
+  /* background-color: aqua; */
+}
+
+.form form {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  /* background-color: tomato; */
+}
+
+.inputs {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  min-width: 348px;
+  padding: 0.7rem;
+  margin-block: 1rem;
+  /* background-color: yellow; */
+}
+
+.inputs input {
+  width: 100%;
+  height: 5rem;
+  border: none;
+  border-bottom: 1px dotted var(--white);
+  outline: none;
+  color: var(--font-color-light);
+  font-size: 1.5rem;
+  background-color: var(--gray);
+}
+
+.inputs input::placeholder {
+  color: var(--placeholder);
+  opacity: 0.5;
+  font-size: 1.5rem;
+}
+
+#btnPassword {
+  display: flex;
+  align-items: center;
+  position: fixed;
+  background-color: transparent;
+  border: none;
+  height: 3.4rem;
+  margin-left: 290px;
+}
+
+#btnPassword svg path[fill*='black'] {
+  fill: var(--placeholder);
+}
+
+#btnLogar {
+  width: 100%;
+  height: 5rem;
+  margin-block: 1rem;
+  font-family: var(--fontcomfortaa);
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: var(--gray);
+  border: none;
+  border-radius: 3px;
+  background-color: var(--orange);
+}
+
+#btnLogar:active {
+  transform: scale(0.99);
+}
+
+.socialLinks,
+.recuperaSenha,
+.footerForm {
+  display: flex;
+  justify-content: start;
+  padding: 0 0.7rem;
+  width: 100%;
+  flex-direction: column;
+}
+
+.criarConta a,
+.recuperaSenha span a,
+.footerForm span {
+  font-size: 1.2rem;
+  font-weight: bold;
+  font-family: var(--fontcomfortaa);
+  color: var(--placeholder);
+}
+
+.footerForm span {
+  text-align: center;
+}
+
+.recuperaSenha {
+  margin-top: -0.7rem;
+}
+
+.socialLinks {
+  display: flex;
+  flex-direction: row;
+  align-self: center;
+  justify-content: space-between;
+  margin-block: 2rem;
+  width: 250px;
+}
+
+.social {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 60px;
+}
+
+.criarConta {
+  margin-block: 4rem 2rem;
+  padding: 0.7rem;
+}
+
+.criarConta a {
+  color: var(--orange);
+}
